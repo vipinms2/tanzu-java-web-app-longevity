@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Greetings from Spring Boot + Tanzu + 1643490001!";
+		return "Greetings from Spring Boot + Tanzu + 1643497202!";
 	}
 
 }
