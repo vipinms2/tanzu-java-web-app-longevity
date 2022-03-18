@@ -9,10 +9,10 @@ public class HelloController {
 	@RequestMapping("/")
 	public String index() {
 <<<<<<< HEAD
-		return "Greetings from Spring Boot + Tanzu + 1647568801!";
+		return "Greetings from Spring Boot + Tanzu + 1647576001!";
 =======
-		return "Greetings from Spring Boot + Tanzu + 1647568801!";
->>>>>>> 1647568801f1647568801c1647568801a1647568801c1647568801eda1647568801d1647568801ad1647568801dde1647568801d1647568801cdb
+		return "Greetings from Spring Boot + Tanzu + 1647576001!";
+>>>>>>> 1647576001f1647576001c1647576001a1647576001c1647576001eda1647576001d1647576001ad1647576001dde1647576001d1647576001cdb
 	}
 
 }
