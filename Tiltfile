@@ -1,6 +1,6 @@
-SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='your-registry.io/project/tanzu-java-web-app-source')
+SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='<SOURCE_IMAGE>')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
-NAMESPACE = os.getenv("NAMESPACE", default='default')
+NAMESPACE = os.getenv("NAMESPACE", default='<NAMESPACE>')
 
 k8s_custom_deploy(
     'tanzu-java-web-app',
@@ -18,5 +18,5 @@ k8s_custom_deploy(
     ]
 )
 
-k8s_resource('tanzu-java-web-app', port_forwards=["8080:8080"],
+k8s_resource('tanzu-java-web-app', port_forwards=["<PORT>:8080"],
             extra_pod_selectors=[{'serving.knative.dev/service': 'tanzu-java-web-app'}])
